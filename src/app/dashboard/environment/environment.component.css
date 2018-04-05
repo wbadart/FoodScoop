@@ -1,0 +1,7 @@
+table {
+    font-size: 1.4em;
+}
+
+td:nth-child(1) {
+    width: 24px;
+}

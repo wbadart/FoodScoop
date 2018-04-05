@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { mac } from '../mac';
 
 @Component({
   selector: 'app-health',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./health.component.css']
 })
 export class HealthComponent implements OnInit {
+  food = mac;
 
   constructor() { }
 

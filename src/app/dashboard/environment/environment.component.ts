@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { mac } from '../mac';
 
 @Component({
   selector: 'app-environment',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./environment.component.css']
 })
 export class EnvironmentComponent implements OnInit {
+  food = mac;
 
   constructor() { }
 

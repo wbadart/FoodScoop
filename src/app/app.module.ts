@@ -11,6 +11,7 @@ import { OverviewComponent } from './dashboard/overview/overview.component';
 import { HealthComponent } from './dashboard/health/health.component';
 import { EnvironmentComponent } from './dashboard/environment/environment.component';
 import { IngredientsComponent } from './dashboard/ingredients/ingredients.component';
+import { StarsComponent } from './stars/stars.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { IngredientsComponent } from './dashboard/ingredients/ingredients.compon
     OverviewComponent,
     HealthComponent,
     EnvironmentComponent,
-    IngredientsComponent
+    IngredientsComponent,
+    StarsComponent
   ],
   imports: [
     BrowserModule,

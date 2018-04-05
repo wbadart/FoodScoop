@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
       if (users[u.username] !== u.password) {
         this.error = 'Invalid credentials';
       } else {
-        this.router.navigate(['dashboard']);
+        this.router.navigate(['dashboard', 'overview']);
       }
   }
 

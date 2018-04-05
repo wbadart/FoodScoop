@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { mac } from '../mac';
 
 @Component({
   selector: 'app-overview',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./overview.component.css']
 })
 export class OverviewComponent implements OnInit {
-  private PIC = require('./mac.jpg');
+  food = mac;
 
   constructor() { }
 
