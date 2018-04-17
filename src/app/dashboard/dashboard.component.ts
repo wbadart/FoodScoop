@@ -12,10 +12,18 @@ export class DashboardComponent implements OnInit, OnDestroy {
   food: object;
   private sub: any;
 
+  queue: any;
+
   constructor(private route: ActivatedRoute) {
+    this.queue = ['mac', 'kiwi'];
     this.sub = this.route.params.subscribe(params => {
       this.food = DB[params['food']];
     });
+  }
+
+  compare(f) {
+    // this.queue.unshift(f);
+    // console.log(this.queue);
   }
 
   ngOnInit() {

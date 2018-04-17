@@ -23,6 +23,9 @@
         routerLink="/dashboard/{{food.id}}/ingredients"
         class="nav-link">Ingredients</a>
   </li>
+  <li class="nav-item">
+      <a class="btn btn-info" style="color:white" (click)="compare(food.id)">+ compare</a>
+  </li>
 </ul>
 
 <router-outlet></router-outlet>
@@ -32,7 +35,7 @@
   <a class="nav-link disabled" href="#"><i class="fa fa-heart"></i></a>
   <a
         class="nav-link disabled"
-        routerLink="/compare">
+        [routerLink]="['/compare', queue[0], queue[1]]">
       <i class="fa fa-balance-scale"></i>
   </a>
 </nav>
