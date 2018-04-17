@@ -2,25 +2,25 @@
   <li class="nav-item">
     <a
         routerLinkActive="active"
-        routerLink="/dashboard/overview"
+        routerLink="/dashboard/{{food.id}}/overview"
         class="nav-link">Overview</a>
   </li>
   <li class="nav-item">
     <a
         routerLinkActive="active"
-        routerLink="/dashboard/health"
+        routerLink="/dashboard/{{food.id}}/health"
         class="nav-link">Health</a>
   </li>
   <li class="nav-item">
     <a
         routerLinkActive="active"
-        routerLink="/dashboard/environment"
+        routerLink="/dashboard/{{food.id}}/environment"
         class="nav-link">Environment</a>
   </li>
   <li class="nav-item">
     <a
         routerLinkActive="active"
-        routerLink="/dashboard/ingredients"
+        routerLink="/dashboard/{{food.id}}/ingredients"
         class="nav-link">Ingredients</a>
   </li>
 </ul>
@@ -30,5 +30,9 @@
 <nav class="navbar fixed-bottom justify-content-center bg-light">
   <a class="nav-link" href="#"><i class="fa fa-search"></i></a>
   <a class="nav-link disabled" href="#"><i class="fa fa-heart"></i></a>
-  <a class="nav-link disabled" href="#"><i class="fa fa-balance-scale"></i></a>
+  <a
+        class="nav-link disabled"
+        routerLink="/compare">
+      <i class="fa fa-balance-scale"></i>
+  </a>
 </nav>

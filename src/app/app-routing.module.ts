@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
+import { CompareComponent } from './compare/compare.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { OverviewComponent } from './dashboard/overview/overview.component';
 import { HealthComponent } from './dashboard/health/health.component';
@@ -10,7 +11,7 @@ import { IngredientsComponent } from './dashboard/ingredients/ingredients.compon
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'dashboard',
+  { path: 'dashboard/:food',
     component: DashboardComponent,
     children: [
       { path: 'overview', component: OverviewComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
       { path: 'ingredients', component: IngredientsComponent },
     ]
   },
+  { path: 'compare/:a/:b', component: CompareComponent },
 ];
 
 @NgModule({

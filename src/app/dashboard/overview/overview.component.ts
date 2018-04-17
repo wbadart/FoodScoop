@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { mac } from '../mac';
+import { DashboardComponent } from '../dashboard.component';
 
 @Component({
   selector: 'app-overview',
@@ -7,9 +7,11 @@ import { mac } from '../mac';
   styleUrls: ['./overview.component.css']
 })
 export class OverviewComponent implements OnInit {
-  food = mac;
+  food: object;
 
-  constructor() { }
+  constructor(app: DashboardComponent) {
+    this.food = app.food;
+  }
 
   ngOnInit() {
   }
