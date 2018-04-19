@@ -1,4 +1,4 @@
-<ul class="nav nav-tabs">
+<ul class="nav navbar sticky-top navbar-light bg-light">
   <li class="nav-item">
     <a
         routerLinkActive="active"
@@ -23,14 +23,19 @@
         routerLink="/dashboard/{{food.id}}/ingredients"
         class="nav-link">Ingredients</a>
   </li>
-  <li class="nav-item">
-      <a class="btn btn-info" style="color:white" (click)="compare(food.id)">+ compare</a>
-  </li>
 </ul>
+<div class="btn-toolbar justify-content-center" role="toolbar" id="util-buttons">
+  <div class="btn-group mr-2" role="group">
+      <a class="btn btn-info btn-sm" style="color:white" (click)="compare(food.id)">+ compare</a>
+  </div>
+  <div class="btn-group mr-2" role="group">
+      <a class="btn btn-info btn-sm" style="color:white">+ favorite</a>
+  </div>
+</div>
 
 <router-outlet></router-outlet>
 
-<nav class="navbar fixed-bottom justify-content-center bg-light">
+<nav class="nav navbar-fixed-bottom justify-content-center bg-light" id="nav-footer">
   <a class="nav-link" href="#"><i class="fa fa-search"></i></a>
   <a class="nav-link disabled" href="#"><i class="fa fa-heart"></i></a>
   <a
