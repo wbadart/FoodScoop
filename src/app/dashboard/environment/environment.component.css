@@ -5,3 +5,11 @@ table {
 td:nth-child(1) {
     width: 24px;
 }
+
+h2 {
+	text-align: center;
+}
+
+h4 {
+	text-align: center;
+}
