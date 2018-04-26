@@ -21,6 +21,8 @@ export const DB = {
 		satfat: 1.5,
 		transfat: 0,
 		sodium: 530,
+		artificial: "Yes",
+		nongmo: "Yes",
 
 		servingsize: "1 cup prepared",
 
