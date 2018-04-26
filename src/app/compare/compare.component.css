@@ -1,2 +1,11 @@
 .bottom-border {border-bottom: 1px solid black;}
-#comparison-table img{display:block; width:auto; height:100%;}
+#comparison-table img {
+    display: block;
+    height: 100%;
+    width: auto;
+    max-width: 120px;
+}
+
+/* table#comparison-table tr.border-bottom td { */
+/*     border-bottom: 1px solid black !important */
+/* } */

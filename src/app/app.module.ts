@@ -13,6 +13,7 @@ import { EnvironmentComponent } from './dashboard/environment/environment.compon
 import { IngredientsComponent } from './dashboard/ingredients/ingredients.component';
 import { StarsComponent } from './stars/stars.component';
 import { CompareComponent } from './compare/compare.component';
+import { ComprowComponent } from './compare/comprow/comprow.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { CompareComponent } from './compare/compare.component';
     EnvironmentComponent,
     IngredientsComponent,
     StarsComponent,
-    CompareComponent
+    CompareComponent,
+    ComprowComponent
   ],
   imports: [
     BrowserModule,

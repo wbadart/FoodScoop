@@ -1,0 +1,3 @@
+<th scope="col">{{name}}</th>
+<td [ngClass]="compare(a, b) ? 'table-danger' : 'table-success'">{{a}}{{unit ? ' ' + unit : ''}}</td>
+<td [ngClass]="compare(b, a) ? 'table-danger' : 'table-success'">{{b}}{{unit ? ' ' + unit : ''}}</td>

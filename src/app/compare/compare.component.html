@@ -12,31 +12,18 @@
 				<td></td>
 				<td><img [src]="a.img" [alt]="a.alt"></td>
 				<td><img [src]="b.img" [alt]="b.alt"></td>
+            </tr>
 			<tr>
 				<th scope="col">Serving Size</th>
 				<td>{{a.servingsize}}</td>
 				<td>{{b.servingsize}}</td>
 			</tr>
-			<tr>
-				<th scope="col">Calories</th>
-				<td class="table-warning" id="a_cal">{{a.calories}}</td>
-				<td id="b_cal">{{b.calories}}</td>
-			</tr>
-			<tr>
-				<th scope="col">Fat Calories</th>
-				<td class="table-danger">{{a.fatcalories}}</td>
-				<td class="table-warning">{{b.fatcalories}}</td>
-			</tr>
-			<tr>
-				<th scope="col">Saturated Fat</th>
-				<td>{{a.satfat}} g</td>
-				<td class="table-warning">{{b.satfat}} g</td>
-			</tr>	
-			<tr>
-				<th scope="col" class="bottom-border">Sodium</th>
-				<td class="table-danger bottom-border">{{a.sodium}} mg</td>
-				<td class="bottom-border">{{b.sodium}} mg</td>
-			</tr>
+            <tr app-comprow [a]="a.calories" [b]="b.calories" [name]="'Calories'"></tr>
+            <tr app-comprow [a]="a.fatcalories" [b]="b.fatcalories" [name]="'Fat Calories'"></tr>
+            <tr app-comprow [a]="a.satfat" [b]="b.satfat" [unit]="'g'" [name]="'Saturated Fat'"></tr>
+            <tr
+                app-comprow [a]="a.sodium" [b]="b.sodium" [unit]="'mg'" [name]="'Sodium'"
+                class="border-bottom"></tr>
 			<tr>
 				<th scope="col" class="bottom-border">Artificial flavors, synthetic colors, preservatives</th>
 				<td class="table-danger bottom-border">Yes</td>
@@ -62,17 +49,6 @@
 	</table>
 	<br>
 </div>
-<script>
-	$(document).ready(function(){
-		var a = parseInt(document.getElementById("a_cal"));
-		var b = parseInt(document.getElementById("b_cal"));
-		alert(a);
-		if (a > b) {
-			document.getElementById("a_cal").style.color("red");
-			document.getElementById("b_cal").style.color("green");
-		}
-	});
-</script>
 <nav class="navbar fixed-bottom justify-content-center bg-light">
   <a class="nav-link" href="#"><i class="fa fa-search"></i></a>
   <a class="nav-link disabled" href="#"><i class="fa fa-heart"></i></a>
