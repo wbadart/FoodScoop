@@ -1,6 +1,42 @@
-{{a | json}}
-<hr>
-{{b | json}}
+<div class="container">
+	<table class="table">
+		<thead>
+			<tr>
+				<th scope="col"></th>
+				<th scope="col">{{a.name}}</th> <!--br><img [src]="a.img" [alt]="a.alt"></th-->
+				<th scope="col">{{b.name}}</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="col">Serving Size</th>
+				<td>{{a.servingsize}}</td>
+				<td>{{b.servingsize}}</td>
+			</tr>
+			<tr>
+				<th scope="col">Calories</th>
+				<td>{{a.calories}}</td>
+				<td>{{b.calories}}</td>
+			</tr>
+			<tr>
+				<th scope="col">Fat Calories</th>
+				<td>{{a.fatcalories}}</td>
+				<td>{{b.fatcalories}}</td>
+			</tr>
+			<tr>
+				<th scope="col">Saturated Fat</th>
+				<td>{{a.satfat}} g</td>
+				<td>{{b.satfat}} g</td>
+			</tr>	
+			<tr>
+				<th scope="col">Sodium</th>
+				<td>{{a.sodium}} mg</td>
+				<td>{{b.sodium}} mg</td>
+			</tr>
+
+		</tbody>
+	</table>
+</div>
 <nav class="navbar fixed-bottom justify-content-center bg-light">
   <a class="nav-link" href="#"><i class="fa fa-search"></i></a>
   <a class="nav-link disabled" href="#"><i class="fa fa-heart"></i></a>

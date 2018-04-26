@@ -15,7 +15,14 @@ export const DB = {
 		Pastas, dry foods
         `,
 
-        vegetarian: true,
+		vegetarian: true,
+		calories: 350,
+		fatcalories: 110,
+		satfat: 1.5,
+		transfat: 0,
+		sodium: 530,
+
+		servingsize: "1 cup prepared",
 
         benefits: [
             'Is good for your soul',
@@ -49,6 +56,12 @@ export const DB = {
 		`,
 		where: 'Pastas, dry foods',
 		vegetarian: true,
+		calories: 270,
+		fatcalories: 45,
+		satfat: 3,
+		transfat: 0,
+		servingsize: "1 cup prepared",
+		sodium: 400,
 		benefits: [
 			'Certified Organic', 
 			'Non-GMO Project verified',
@@ -74,7 +87,11 @@ export const DB = {
         environment: 2,
         convenience: 3,
         description: 'Literally just a kiwi',
-        where: '???',
+		where: '???',
+		servingsize: "1 fruit",
+		calories: 42,
+		sodium: 2,
+		satfat: 0,
         vegetarian: true,
 
         benefits: [
