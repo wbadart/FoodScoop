@@ -3,7 +3,7 @@
     <a
         routerLinkActive="active"
         routerLink="/dashboard/{{food.id}}/overview"
-        class="nav-link">Overview</a>
+        class="nav-link">Overview{{queue|json}}</a>
   </li>
   <li class="nav-item">
     <a
@@ -26,7 +26,8 @@
 </ul>
 <div class="btn-toolbar justify-content-center" role="toolbar" id="util-buttons">
   <div class="btn-group mr-2" role="group">
-      <a class="btn btn-info btn-sm" style="color:white" (click)="compare(food.id)">+ compare</a>
+      <a class="btn btn-sm" style="color:white" (click)="compare(food.id)"
+        [ngClass]="queue.includes(food.id) ? 'btn-success' : 'btn-info'">+ compare</a>
   </div>
   <div class="btn-group mr-2" role="group">
       <a class="btn btn-info btn-sm" style="color:white">+ favorite</a>

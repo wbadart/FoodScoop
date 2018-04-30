@@ -35,6 +35,15 @@
     <h2>Where to Find</h2>
     <p>{{food.where}}</p>
 
+    <hr>
+
+    <h2>You might like:</h2>
+    <ul>
+      <li *ngFor="let other of db">
+        <a [routerLink]="['/dashboard', other.id, 'overview']">{{other.name}}</a>
+      </li>
+    </ul>
+
     <br>
     <br>
     <br>

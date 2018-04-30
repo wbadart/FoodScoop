@@ -11,22 +11,34 @@ import { DB } from '../db';
 export class DashboardComponent implements OnInit, OnDestroy {
   food: object;
   private sub: any;
+  params: any;
 
   queue: any;
 
   constructor(private route: ActivatedRoute) {
-    this.queue = ['mac', 'kiwi'];
+    this.queue = [];
     this.sub = this.route.params.subscribe(params => {
       this.food = DB[params['food']];
     });
+    this.params = this.route.params;
   }
 
   compare(f) {
-    // this.queue.unshift(f);
-    // console.log(this.queue);
+    if (this.queue.includes(f)) {
+      this.queue.splice(this.queue.indexOf(f), 1);
+    } else {
+      this.queue.push(f);
+    }
+    document.cookie = JSON.stringify(this.queue);
   }
 
   ngOnInit() {
+    console.log(document.cookie);
+    try {
+    this.queue = JSON.parse(document.cookie);
+    } catch {
+      this.queue = [];
+    }
   }
 
   ngOnDestroy() {

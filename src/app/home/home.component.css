@@ -1,27 +1,22 @@
-div.jumbotron {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('bg.jpg');
-    background-repeat: none;
-    background-size: cover;
-    border-radius: 0 !important;
+.container {
     color: white;
 }
 
-div.jumbotron h1 {
-    font-size: 6rem;
+.page-header {
     font-weight: bold;
+    margin-top: 2em;
 }
 
-div.jumbotron p {
+.page-header h1 {
+    font-size: 7em;
+}
+
+.page-header p {
     font-size: 2em;
 }
 
 input {
     margin-bottom: 1em;
-}
-
-input[type="submit"] {
-    margin: auto;
-    padding: 1em;
 }
 
 form {
