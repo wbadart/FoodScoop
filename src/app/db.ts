@@ -15,12 +15,14 @@ export const DB = {
         Pastas, dry foods
         `,
 
-    vegetarian: true,
-    calories: 350,
-    fatcalories: 110,
-    satfat: 1.5,
-    transfat: 0,
-    sodium: 530,
+		vegetarian: true,
+		calories: 350,
+		fatcalories: 110,
+		satfat: 1.5,
+		transfat: 0,
+		sodium: 530,
+		artificial: "Yes",
+		nongmo: "Yes",
 
     servingsize: "1 cup prepared",
 
