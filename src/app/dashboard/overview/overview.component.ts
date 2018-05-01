@@ -9,7 +9,7 @@ import { DB } from '../../db';
   styleUrls: ['./overview.component.css']
 })
 export class OverviewComponent implements OnInit {
-  food: object;
+  food: any;
   db: any;
   sub: any;
 
