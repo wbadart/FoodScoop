@@ -15,13 +15,3 @@ h1 {
 	font-size: 1.5em;
 	text-align: center;
 }
-
-.table-striped>tbody>tr:nth-child(odd)>td, 
-.table-striped>tbody>tr:nth-child(odd)>th {
-   background-color: #E4EFDA;
- }
-
- .table-striped>tbody>tr:nth-child(even)>td, 
-.table-striped>tbody>tr:nth-child(even)>th {
-   background-color: #F0F6EA;
- }
