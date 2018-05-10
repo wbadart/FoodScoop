@@ -33,6 +33,11 @@ ul.nav {
 }
 
 .btn-info, .btn-info:hover, .btn-info:active, .btn-info:visited, .btn-info:focus {
-    background-color: #0D2C54 !important;
-    border-color: #0D2C54 !important;
+    background-color: #57A773 !important;
+    border-color: #57A773 !important;
+/*    color: #14673F;*/
+}
+
+.theme-color {
+    color: #14673F;
 }

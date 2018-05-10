@@ -40,7 +40,7 @@
     <h2>You might like:</h2>
     <ul>
       <li *ngFor="let other of db">
-        <a [routerLink]="['/dashboard', other.id, 'overview']">{{other.name}}</a>
+        <a class="theme-color"[routerLink]="['/dashboard', other.id, 'overview']">{{other.name}}</a>
       </li>
     </ul>
 
